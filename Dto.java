@@ -7,7 +7,7 @@ import io.swagger.annotations.ApiModelProperty;
 import java.io.Serializable;
 
 /**
- * 数据传输对象（后端输出对象）
+ * 数据传输对象（后端输出对象）222
  * @param <T>
  * Created by hanlu on 2017/5/7.
  */
