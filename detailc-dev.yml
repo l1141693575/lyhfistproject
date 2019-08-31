@@ -1,8 +1,6 @@
 server:
-  port: 8002
-spring:
-  application:
-    name: detail-c
+  port: 8005
+
 eureka:
   client:
     service-url:
@@ -11,7 +9,16 @@ eureka:
 feign:
   hystrix:
     enabled: true
-
+logging:
+  level: info
+spring:
+  sleuth:
+    sampler:
+      percentage: 1.0
+  zipkin:
+    base-url: http://localhost:9004
+  application:
+    name: detail-c
 #myorderprovider:
 #  ribbon:
 #    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
